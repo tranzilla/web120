@@ -1,0 +1,58 @@
+/* Template Style */
+
+html {
+    box-sizing: border-box;
+	background-color:#ccc; /*red green blue*/
+}
+
+div#wrapper {
+	background-color:#fff; 
+	width:80%; 
+	margin:auto; 
+}
+ 
+footer{
+	clear:both;
+	text-align:center;
+}
+
+/* Desktop */
+@media all and (min-width:1280px){
+	/* Left Column */
+	section {
+		float:left;
+		width:68%;
+		background-color:red;
+}
+/* Right Column */
+	aside {
+		float:right;
+		width:30%; 
+		background-color:blue;
+}
+	
+	}
+
+/* Tablet */
+@media all and (min-width:481px) and (max-width:1279px){
+	/* Left Column */
+	section {
+		float:left;
+		width:58%;
+		background-color:red;
+}
+/* Right Column */
+	aside {
+		float:right;
+		width:40%; 
+		background-color:blue;
+}
+	
+}
+/* Phone */
+@media all and (max-width:480px){
+	
+	div#wrapper{
+		background-color:green;
+	}
+}

@@ -1,0 +1,73 @@
+.contact-form {
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+div.contact-input {
+    margin: 0px 50px; 
+}
+
+input {
+    width: 40%;
+    height: 30px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    resize: none;
+    margin: 5px 0px 5px;
+}
+
+textarea {
+    width: 40%;
+    height: 90px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    margin: 5px 0px 5px;
+    resize: none;
+}
+
+div.g-recaptcha{
+    display: inline-block;
+}
+
+#rc-imageselect {
+    transform:scale(0.77);
+    -webkit-transform:scale(0.77);transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+}
+
+input[type="submit"] {
+    width: 11%;
+}
+
+/* Phone - Form Display */
+@media all and (max-width: 478px) {  
+    input {
+        width: 90%;
+        height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        resize: none;
+        margin: 5px 0px 5px;
+    }
+
+    textarea {
+        width: 90%;
+        height: 90px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        margin: 5px 0px 5px;
+        resize: none;
+    }
+    
+    #rc-imageselect, .g-recaptcha {
+        transform:scale(0.77);
+        -webkit-transform:scale(0.77);
+        transform-origin:0 0;
+        -webkit-transform-origin: top center;
+    }
+    
+    input[type="submit"] {
+        width: 50%;
+    }
+}
