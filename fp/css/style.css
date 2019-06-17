@@ -1,0 +1,230 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	font: 400 18px/1.8 "Lato", sans-serif;
+	color: #777;
+}
+
+/*sets the image as background */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+	position: relative;
+	opacity: 0.80;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+     -webkit-background-size: cover; /* safari may need this */
+}
+
+/*sets the url link for background image. Makes this the full page */
+.bgimg-1 {
+	background-image: url("../images/img_parallax.jpg");
+	min-height: 100%;
+    min-width: 100%;
+}
+
+/*sets the url link for background image. Set the height of image 2*/
+.bgimg-2 {
+	background-image: url("../images/img_parallax2.jpg");
+	min-height: 500px;
+}
+
+/*sets the url link for background image. Set the height of image 2*/
+.bgimg-3 {
+	background-image: url("../images/img_parallax3.jpg");
+	min-height: 500px;
+}
+
+/* text orientation in all the images */
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+}
+
+.caption span.border {
+	background-color: #111;
+	color: #fff;
+	padding: 20px;
+	font-size: 32px;
+	letter-spacing: 10px;
+}
+
+
+/* text in img-2 
+.caption span.border2 {
+	background-color:transparent;
+	font-size:25px;
+	color: #f7f7f7;
+}
+*/
+
+/*About Me Section */
+#about-me {
+	color: #777;
+	background-color:white;
+	padding:40px 50px;
+	text-align: justify;
+    min-height: 400px;
+    overflow: auto;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+
+.col-wide {
+    width: 78%;
+    float: left;
+    padding-left: 26px;
+}
+
+.col-narrow {
+    width: 22%;
+    float: left;
+}
+
+
+
+.black-banner {
+	position:relative;
+	color:#ddd;
+	background-color:#282E34;
+	text-align:center;
+	padding:30px 80px;
+    
+}
+
+/*Services Section*/
+.black-banner h3 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.black-banner li {
+    display: flex;
+    justify-content: center;
+}
+
+.black-banner p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+/*Contact Me Section*/
+#contact a {
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.fa {
+    margin: 10px;
+}
+/*
+ul {
+	list-style-type: none;
+}
+*/
+
+h3 {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font: 20px "Lato", sans-serif;
+	color: #111;
+	text-align:center;
+}
+
+/*Footer*/
+footer .caption span.border {
+    font-size: 15px;
+}
+
+footer span.border a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Mobile View */
+@media only screen and (max-device-width: 768px), 
+only screen and (max-device-width: 768px) and (orientation: landscape) { 
+    
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll !important;
+    }
+    
+    .caption {
+        background-color: #0000007d;
+    }
+    
+   .caption span.border {
+       background-color: transparent;
+       font-size: 27px;
+    }
+    
+    .black-banner {
+        padding: 30px 10px;
+    }
+    
+    #about-me {
+        padding: 40px 20px;
+    }
+    
+    .col-narrow {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .col-wide {
+        width: 100%;
+        padding: 1px;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1366px) {
+        .caption {
+        background-color: #0000007d;
+    }
+    
+   .caption span.border {
+       background-color: transparent;
+       font-size: 27px;
+    }
+    
+    .black-banner {
+        padding: 30px 10px;
+    }
+    
+    #about-me {
+        padding: 40px 30px;
+    }
+    
+    .col-narrow {
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .col-wide {
+        width: 100%;
+        padding: 1px;
+    }
+}
